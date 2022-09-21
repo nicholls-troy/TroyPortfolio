@@ -38,7 +38,7 @@
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
-    display: block;
+    display: inline-block;
     text-align: center;
     margin-left: 160px;
 }
@@ -92,6 +92,12 @@
     font-family: 'Montserrat', sans-serif;
     margin-left: 35%;
     padding: 10px;
+}
+
+.projects button a {
+    text-decoration: none;
+    background-color: rgb(13, 129, 156);
+    color: #fff;
 }
 
 .footer {
