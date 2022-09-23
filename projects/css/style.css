@@ -57,6 +57,43 @@
     text-align: center;
 }
 
+.content h2 {
+    color: rgb(13, 129, 156);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.projects {
+    border: 1px solid rgb(60, 59, 59);
+    border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+}
+
+.projects img {
+    width: 80%;
+    align-items: center;
+    padding: 40px 10px;
+}
+
+.projects p {
+    font-size: 10px;
+    padding: 10px;
+}
+
+.projects a {
+    color: rgb(13, 129, 156);
+    text-decoration: none;
+}
+
+.projects a:hover {
+    color: #fff;
+    background-color: rgb(13, 129, 156);
+}
+
 .footer {
     display: flex;
     justify-content: center;
@@ -71,15 +108,26 @@
 }
 
 /* Styling hamburger menu for mobile screens */
-@media screen and (min-width: 321px) {
+
+@media screen and (min-width: 375px) {
     .links a {
         margin-left: 220px;
     }
+
+    .projects p {
+        font-size: 12px;
+        padding: 20px 0;
+    }
 }
 
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 425px) {
     .links a {
         margin-left: 250px;
+    }
+
+    .projects p {
+        font-size: 14px;
+        padding: 30px 0;
     }
 }
 
@@ -111,6 +159,16 @@
 
     .content p {
         font-size: 1.2rem;
+    }
+
+    .content h2 {
+        font-size: 1.5rem;
+        margin-top: 40px;
+    }
+
+    .projects p {
+        font-size: 18px;
+        padding: 80px 0;
     }
 }
 
@@ -145,6 +203,11 @@
         font-size: 1.4rem;
     }
 
+    .content h2 {
+        font-size: 1.8rem;
+        margin-top: 60px;
+    }
+
     .footer i {
         font-size: 2.5rem;
         padding: 0 15px;
@@ -155,8 +218,25 @@
 
 @media screen and (min-width: 1440px) {
 
+    .links a {
+        font-size: 1.8rem;
+        margin: 0 50px;
+    }
+
     .content p {
         font-size: 1.6rem;
+    }
+
+    .content h2 {
+        font-size: 2.3rem;
+    }
+
+    .projects img {
+        padding: 20px 50px;
+    }
+    .projects p {
+        font-size: 1.8rem;
+        padding: 120px 0;
     }
 
     .footer i {
@@ -194,6 +274,18 @@
 
     .content p {
         font-size: 2.5rem;
+    }
+
+    .content h2 {
+        font-size: 4rem;
+    }
+
+    .projects img {
+        padding: 100px 50px;
+    }
+    .projects p {
+        font-size: 2.8rem;
+        padding: 250px 0;
     }
 
     .footer a i {
