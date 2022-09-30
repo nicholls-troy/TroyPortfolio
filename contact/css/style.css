@@ -107,7 +107,7 @@
     }
 
     .heading h3 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     
     .heading h3 a {
@@ -160,8 +160,8 @@
     }
 
     .links a {
-        margin-left: 25px;
         font-size: 1.5rem;
+        margin: 0 25px;
     }
 
     .content img {
@@ -179,7 +179,8 @@
     }
 
     .footer i {
-        margin-left: 20px;
+        font-size: 30px;
+        padding: 0 15px;
     }
 }
 

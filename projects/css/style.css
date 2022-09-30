@@ -27,6 +27,10 @@
     top: 0;
 }
 
+.heading a:hover {
+    color: white;
+}
+
 .links {
     background-color: rgb(225, 227, 227);
     display: none;
@@ -44,7 +48,7 @@
 }
 
 .links a:hover {
-    background-color: rgb(13, 129, 156);
+    background-color: rgb(225, 227, 227);
     color: white;
 }
 
@@ -105,6 +109,10 @@
     font-size: 22px;
     padding: 0 15px;
     color: rgb(13, 129, 156);
+}
+
+.footer i:hover {
+    color: white;
 }
 
 /* Styling hamburger menu for mobile screens */
@@ -188,10 +196,7 @@
     }
 
     .links {
-        display: flex;
-        flex-direction: row;
-        margin-left: 50px;
-        padding: 0 25px;
+        margin-left: 150px;
     }
 
     .links a {
@@ -206,10 +211,16 @@
     .content h2 {
         font-size: 1.8rem;
         margin-top: 60px;
+        margin-left: 10px;
+        text-align: left;
+    }
+
+    .projects {
+        border: 3px solid rgb(60, 59, 59);
     }
 
     .footer i {
-        font-size: 2.5rem;
+        font-size: 30px;
         padding: 0 15px;
     }
 }
