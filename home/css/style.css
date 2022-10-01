@@ -302,8 +302,6 @@
     }
 
     .links {
-        display: flex;
-        flex-direction: row;
         margin-left: 150px;
         padding: 0 25px;
     }
