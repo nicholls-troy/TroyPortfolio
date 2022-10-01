@@ -9,6 +9,8 @@ function tpMenu() {
     }
 }
 
+tpMenu()
+
 // Variable
 const accordion = document.getElementsByClassName('content')
 

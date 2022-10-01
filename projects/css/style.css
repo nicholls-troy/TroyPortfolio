@@ -98,6 +98,81 @@
     background-color: rgb(225, 227, 227);
 }
 
+.magic {
+    background-color: rgb(13, 129, 156);
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    border: 0;
+    border-radius: 3px;
+    font-size: 16px;
+    padding: 12px 20px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    box-shadow: 0 3px rgba(13, 129, 156, 0.5);
+    margin: auto;
+}
+
+.magic:focus {
+    outline: none;
+}
+
+.magic:active {
+    box-shadow: none;
+    transform: translateY(2px);
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 150px;
+    width: 150px;
+    position: relative;
+    transition: .4s ease;
+}
+
+.boxes.big {
+    width: 200px;
+    height: 200px;
+}
+
+.boxes.big .box {
+    transform: rotateZ(360deg);
+}
+
+.box {
+    background-image: url('https://media.giphy.com/media/duNowzaVje6Di3hnOu/giphy.gif');
+    background-repeat: no-repeat;
+    background-size: 150px 150px;
+    margin-right: 20px;
+    position: relative;
+    height: 125px;
+    width: 125px;
+    transition: .4s ease;
+}
+
+.box::after {
+    content: '';
+    background-color: rgb(13, 129, 156);
+    position: absolute;
+    top: 8px;
+    right: -15px;
+    height: 100%;
+    width: 15px;
+    transform: skewY(45deg);
+}
+
+.box::before {
+    content: '';
+    background-color: rgba(13, 129, 156, 0.5);
+    position: absolute;
+    bottom: -15px;
+    left: 8px;
+    height: 15px;
+    width: 100%;
+    transform: skewX(45deg);
+}
+
 .footer {
     display: flex;
     justify-content: center;
@@ -178,6 +253,17 @@
         font-size: 18px;
         padding: 80px 0;
     }
+
+    .magic {
+        margin-left: 100px;
+    }
+
+    .boxes {
+        height: 150px;
+        width: 150px;
+        margin-right: 100px;
+        margin-top: 10px;
+    }
 }
 
 /* Styling for large screens (not 4K) */
@@ -220,6 +306,10 @@
         width: 90%;
     }
 
+    .magic {
+       font-size: 20px;
+    }
+
     .footer i {
         font-size: 30px;
         padding: 0 15px;
@@ -249,6 +339,10 @@
     .projects p {
         font-size: 1.8rem;
         padding: 120px 0;
+    }
+
+    .magic {
+        font-size: 36px;
     }
 
     .footer i {
@@ -303,6 +397,15 @@
     .projects p {
         font-size: 2.8rem;
         padding: 250px 0;
+    }
+
+    .magic {
+        font-size: 48px;
+    }
+
+    .boxes {
+        height: 150px;
+        width: 150px;
     }
 
     .footer a i {

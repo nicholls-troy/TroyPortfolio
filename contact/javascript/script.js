@@ -8,3 +8,5 @@ function tpMenu() {
         link.style.display = "none";
     }
 }
+
+tpMenu()
