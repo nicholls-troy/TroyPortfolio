@@ -127,6 +127,7 @@
     justify-content: space-around;
     height: 150px;
     width: 150px;
+    margin-top: 10px;
     position: relative;
     transition: .4s ease;
 }
